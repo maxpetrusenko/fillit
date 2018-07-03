@@ -6,7 +6,7 @@
 /*   By: mpetruse <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/26 18:16:34 by mpetruse          #+#    #+#             */
-/*   Updated: 2018/06/30 12:06:23 by apetrech         ###   ########.fr       */
+/*   Updated: 2018/07/02 17:33:56 by mpetruse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,7 @@ t_block		*create_tetr(char **shape, int x, int y, char val)
 }
 
 /*
-**create base square size of dots
+**create base square size for dots
 */
 
 t_dot		*new_size(int x, int y)

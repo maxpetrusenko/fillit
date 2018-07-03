@@ -6,7 +6,7 @@
 /*   By: apetrech <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/30 12:12:53 by apetrech          #+#    #+#             */
-/*   Updated: 2018/07/02 13:33:32 by mpetruse         ###   ########.fr       */
+/*   Updated: 2018/07/02 17:48:58 by mpetruse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #define INT char *buf;int bl_count;int old_n;char let
 
 /*
-**Utility function to get min-max values for get_piece.
+**function to find min and max edges for the piece
 */
 
 void		ft_min_max(char *str, t_dot *min, t_dot *max)
@@ -42,7 +42,7 @@ void		ft_min_max(char *str, t_dot *min, t_dot *max)
 }
 
 /*
-**Reads a piece from a valid chunk, allocates a structure and populates it.
+**checks given memory for validity,then places tetrimino.
 */
 
 t_block		*ins_piece(char *str, char val)
@@ -101,7 +101,7 @@ int			ch_blocks(char *str)
 }
 
 /*
-**Checks character counts and that chunk format is valid.
+**Checks character counts, hash amount,dot positions and new lines
 */
 
 int			ch_count(char *str, int count)
@@ -132,7 +132,8 @@ int			ch_count(char *str, int count)
 }
 
 /*
-**increases the square size if needed
+**creates needed size, assigns a letter to tetrimino and places it if valid
+**frees memory in the end
 */
 
 t_list		*read_blocks(int fd)

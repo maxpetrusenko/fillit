@@ -6,13 +6,17 @@
 /*   By: mpetruse <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/29 09:56:06 by mpetruse          #+#    #+#             */
-/*   Updated: 2018/06/30 14:42:50 by apetrech         ###   ########.fr       */
+/*   Updated: 2018/07/02 17:35:12 by mpetruse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include "fillit.h"
 #include "fcntl.h"
+
+/*
+**  if error, prints message, otherwise enters at read_blocks
+*/
 
 int	main(int ac, char **av)
 {

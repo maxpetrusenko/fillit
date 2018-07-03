@@ -6,7 +6,7 @@
 /*   By: mpetruse <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/29 14:20:39 by mpetruse          #+#    #+#             */
-/*   Updated: 2018/06/30 13:56:30 by apetrech         ###   ########.fr       */
+/*   Updated: 2018/07/02 17:40:34 by mpetruse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,8 +95,7 @@ int		place(t_block *tetri, t_map *map, int w, int h)
 }
 
 /*
-**Sets a tetrimino on a map at a position with the specified character.
-**To place, call with c=tetri->value. To remove, call with c='.'.
+** when sees # sign changes it to the letter later
 */
 
 void	set_piece(t_block *tetri, t_map *map, t_dot *dot, char c)

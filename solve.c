@@ -6,7 +6,7 @@
 /*   By: mpetruse <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/29 15:10:46 by mpetruse          #+#    #+#             */
-/*   Updated: 2018/06/30 12:40:57 by apetrech         ###   ########.fr       */
+/*   Updated: 2018/07/02 17:49:40 by mpetruse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 #include "fillit.h"
 
 /*
-**creates a map with a big size
+** using recursion to see if block of tetrimino fits in the curr position
+** in not moves it to next position
 */
 
 int		ft_solve_map(t_map *map, t_list *list)
@@ -47,8 +48,8 @@ int		ft_solve_map(t_map *map, t_list *list)
 }
 
 /*
-**Check if there is enough space for the amount of
-**tetri and lists and shows the square
+** Check if there is enough space on th map for mapsolve(creates a minimal
+** space  for tetr)
 */
 
 int		count_space(int i)
@@ -62,7 +63,8 @@ int		count_space(int i)
 }
 
 /*
-**Tries to solve maps starting from the smallest possible size
+** solving map starting from the smallest possible size using recursive function
+** adjusts map size if needed
 */
 
 t_map	*mapsolve(t_list *list)
